@@ -3,5 +3,6 @@ jdk:
   - oraclejdk8
 
 before_script:
+  - "npm install"
   - "npm start"
-  - sleep 3 # give xvfb some time to start
+  - sleep 3
