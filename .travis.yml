@@ -6,3 +6,8 @@ before_script:
   - "npm install"
   - "npm start"
   - sleep 3
+
+script:
+  - git clone git@github.com:axelhildingson/simple_react_test.git
+  - ./gradlew build
+  
