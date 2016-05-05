@@ -5,8 +5,11 @@ jdk:
 before_script:
   - "npm install"
   - sleep 3
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
 
 script:
+  - ./start_server.sh
   - cd ..
   - git clone https://github.com/axelhildingson/simple_react_test.git
   - cd simple_react_test
