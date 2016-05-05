@@ -7,5 +7,7 @@ before_script:
   - sleep 3
 
 script:
+  - cd ..
   - git clone https://github.com/axelhildingson/simple_react_test.git
+  - cd simple_react_test
   - ./gradlew build
