@@ -12,9 +12,12 @@ before_script:
   - sleep 3
 
 script:
+  - cd public/scripts/
+  - webpack ./main.js
+  - cd ..
+  - cd ..
   - ./start_server.sh
   - cd ..
   - git clone https://github.com/axelhildingson/simple_react_test.git
   - cd simple_react_test
-  - sleep 3
   - ./gradlew test
